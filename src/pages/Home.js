@@ -1,38 +1,42 @@
 import { useAuth0 } from '@auth0/auth0-react';
-import React, { useEffect,useState } from 'react'
-import Axios from 'axios';
-
+import React, { Fragment } from 'react'
+import Axios from 'axios'
+import { useEffect, useState } from 'react';
+import Celebrities_List from '../components/Celebrities_List';
 
 
 const Home = () => {
-    const { user, isAuthenticated, isLoading } = useAuth0();
- 
-   const key = "whMsTm/xc1Xf3CZwX2rYw==fWDCbeYFQk5hdisr";
-   const headers = {
-    'X-Api-Key': key,
-   }
-   const nombre = 'Michael Jordan'
-   const url ='https://api.api-ninjas.com/v1/celebrity?name='+ nombre ;
-  useEffect( ()=>{  
-    Axios.get(url, {headers})
-    .then(rest=> {console.log(rest.data)})
-    .catch(error=> {console.log(error)})
-  },[]
+  const { user } = useAuth0();
+  const [celebrity, setCelebrity] = useState([]);
+
+  const key = process.env.REACT_APP_KEY;
+  const headers = {
+    'X-Api-Key': key
+  }
+
+  const url = process.env.REACT_APP_URL_APP;
+  useEffect(() => {
+    console.log(key);
+
+    Axios.get(url, { headers })
+      .then(resp => {
+        console.log(resp.data);
+       setCelebrity(resp.data);
+        
+      })
+
+      .catch(error => { console.log(error) })
+  }, []
 
   )
 
-    if (isLoading) {
-      return <div>Cargando...</div>;
-    }
-  
-    return (
-      isAuthenticated && (
-        <div>
-          <h3>{user.name}</h3>
-           </div>
-      )
-    );
+  return (
+    <div> <h3>{user.name}</h3>
 
+      <Celebrities_List celebrities={celebrity}/>
+
+    </div>
+  )
 
 }
 
