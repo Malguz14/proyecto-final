@@ -3,7 +3,7 @@ import React, { Fragment } from 'react'
 import Axios from 'axios'
 import { useEffect, useState } from 'react';
 import Celebrities_List from '../components/Celebrities_List';
-
+import './Home.css'
 
 const Home = () => {
   const { user } = useAuth0();
@@ -21,8 +21,8 @@ const Home = () => {
     Axios.get(url, { headers })
       .then(resp => {
         console.log(resp.data);
-       setCelebrity(resp.data);
-        
+        setCelebrity(resp.data);
+
       })
 
       .catch(error => { console.log(error) })
@@ -31,11 +31,11 @@ const Home = () => {
   )
 
   return (
-    <div> <h3>{user.name}</h3>
-
-      <Celebrities_List celebrities={celebrity}/>
-
+    <body id="imagen1">
+    <div> <h3 className="hola">{user.name}</h3>
+          <Celebrities_List celebrities={celebrity} />
     </div>
+    </body>
   )
 
 }

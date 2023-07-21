@@ -1,34 +1,48 @@
 import { useAuth0 } from '@auth0/auth0-react';
 import Home from './pages/Home';
-import {Login} from './auth/Login';
-import { Logout} from './auth/Logout';
-import { Favorites } from './pages/Favorites';
+import { Login } from './auth/Login';
+import { Logout } from './auth/Logout';
 import { Link, Route, Routes } from 'react-router-dom';
-import  'bootstrap';
+import { Favorites } from './pages/Favorites';
 import SearchBar from './components/SearchBar';
+import './App.css';
+
+
 
 function App() {
-  const {isAuthenticated} =useAuth0();
+  const { isAuthenticated } = useAuth0();
   return (
     <div className="App">
       <header className="App-header">
-         {isAuthenticated ? (
+        {isAuthenticated ? (
           <>
-          <nav>
-          <Link to='/favorites'>Favoritos</Link>
-          <Link to='/home'>Home</Link>
-          <Link to='/logout'>Logout</Link>
-          </nav>
+            <nav >
+              <div className="titulo">
+                <h2 >CELEBRIDADES</h2>
+
+                <div className="hol">
+                  <Link to='/favorites' ><li>Favoritos</li></Link>
+                </div>
+                <div className="hol"><Link to='/home' ><li>Home</li> </Link>
+                </div>
+                <div className="hol">
+                  <Link to='/logout' ><li>Logout</li> </Link>
+                </div>
+              </div>
+            </nav>
           </>
-         ): (
-          <Login/>
-         )}  
+        ) : (
+          <Login />
+        )}
       </header>
+      <br />
+
       <Routes>
-        <Route path='favorites' element={<Favorites/>} />
-        <Route path='home' element={<SearchBar/>} />
-        <Route path='logout' element={<Logout/>} />
+        <Route path='/favorites' element={<Favorites />} />
+        <Route path='/home' element={<SearchBar />} />
+        <Route path='/logout' element={<Logout />} />
       </Routes>
+
     </div>
   );
 }

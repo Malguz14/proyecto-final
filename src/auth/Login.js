@@ -25,6 +25,5 @@ export const Login = () => {
    if (isLoading){
     return <div>Cargando...</div>;
    }
-
-    return <button onClick={handleLogin} >Acceder</button>
+    return <button type="button" class="btn btn-outline-light" onClick={handleLogin} >Acceder</button>
 };

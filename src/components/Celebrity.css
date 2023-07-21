@@ -1,0 +1,11 @@
+#divCard{
+    width: 15rem;
+    margin: 20px;
+    display: inline-flex;
+    border-radius:10% ;
+    border: solid chocolate;
+    text-align: center;
+}
+h4{
+    text-align: center;
+}

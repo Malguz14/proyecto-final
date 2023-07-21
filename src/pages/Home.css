@@ -1,0 +1,39 @@
+body{
+  background-image: url("/src/img/tree-g79132fe64_1280.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color:rgba(42, 165, 108, 0.753);
+}
+
+#imagen1{
+  background-image: url("/src/img/sign-post-g7a2acb3d9_1280.png");
+  background-size: cover; 
+}
+
+
+     
+
+
+.hola{
+    text-align: center;
+    align-items: center;
+     color:rgb(34, 212, 144);
+     outline-style:groove ; /*Contornos de los elementos*/
+    
+     background-color:black
+  }
+  .table{ 
+    width: 1000px;
+    padding: 25px;
+    margin: 20px;
+    outline-style: double; /*Contornos de los elementos*/
+    outline-color:rgb(216, 84, 23) ;
+    outline-width: 10px;
+    outline-offset: 2px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(9, 240, 248);
+    }
+    .poc{
+      color: rgb(255, 0, 0);
+    }

@@ -1,0 +1,19 @@
+/*Componente de Logout*/
+
+     
+    /*Componente App*/
+    .hol{
+    width: 150px; 
+    height:20px; 
+    text-align: center;
+    align-items: center;
+     display:inline-block; 
+     color:rgb(34, 212, 48);
+      border-radius:50px; 
+     align-items:center; border: 20px; font-size: 18px
+    }
+  
+    .titulo{
+      text-align: center;
+      color: rgb(0, 17, 255);
+    }
