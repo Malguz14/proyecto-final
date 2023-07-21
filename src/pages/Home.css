@@ -5,7 +5,7 @@ body{
   background-color:rgba(42, 165, 108, 0.753);
 }
 
-#imagen1{
+#imagen{
   background-image: url("/src/img/sign-post-g7a2acb3d9_1280.png");
   background-size: cover; 
 }
@@ -23,7 +23,7 @@ body{
      background-color:black
   }
   .table{ 
-    width: 1000px;
+  width: 97%;
     padding: 25px;
     margin: 20px;
     outline-style: double; /*Contornos de los elementos*/

@@ -10,12 +10,13 @@ export const Logout = () => {
     <> 
     
    <div >
-   
-    <button  type="button" class="btn btn-outline-info"  onClick={() => logout({ returnTo: window.location.origin })}>
+   <body  id="cerrar">
+    <button  type="button"  class="btn btn-light"  onClick={() => logout({ returnTo: window.location.origin })}>
       Cerrar sesión
-    </button><body  id="cerrar">
- <h3>Hlasdjdfkgifdghkdfksgjdhsjg</h3>
- <img  src="\auth\visita.png" ></img>
+    </button>
+ <h3 className="poc">VUELVA PRONTO</h3>
+ <img id="imagen2" src="https://th.bing.com/th/id/OIP.tdykZQ0LRgtgeiHT18xVNgHaEz?pid=ImgDet&rs=1" ></img>
+
      </body>
       </div>
  </> );

@@ -30,7 +30,7 @@ const SearchBar = () => {
                 <nav>
                     <div className="search">
                         <li> <input type="text" onChange={handleChange} ></input>
-                            <button type="button" class="btn btn-outline-success" /*className="search-btn"*/ onClick={getCelData}>Buscar</button>
+                            <button type="button" class="btn btn-outline-info" onClick={getCelData}>Buscar</button>
                         </li>
                     </div>
                 </nav>

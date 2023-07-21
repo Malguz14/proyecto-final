@@ -8,7 +8,7 @@ export const Favorites = () => {
     return (
         <Fragment>
 
-            <div className="poc"><h2>Lista de Favoritos</h2> </div>
+            <div className="poc"><h2><li>Lista de Favoritos</li> </h2> </div>
             <table class="table" >
                  <thead>
                     <tr >

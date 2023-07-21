@@ -26,7 +26,7 @@ const Celebrities_List = ({ celebrities }) => {
             <h4  class="card-title">{c.name}</h4>
             <h2>{c.age}</h2>
             <div> {c.occupation}  </div>
-            <button type="button" class="btn btn-outline-primary" onClick={() => handleAdd(c.birthday)}>Agregar Celebridades Favoritas</button>
+            <button type="button" class="btn btn-outline-secondary" onClick={() => handleAdd(c.birthday)}>Agregar Celebridades Favoritas</button>
           </div>
           </div>)
       })}

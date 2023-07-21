@@ -31,7 +31,7 @@ const Home = () => {
   )
 
   return (
-    <body id="imagen1">
+    <body id="imagen">
     <div> <h3 className="hola">{user.name}</h3>
           <Celebrities_List celebrities={celebrity} />
     </div>

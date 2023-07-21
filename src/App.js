@@ -21,12 +21,13 @@ function App() {
                 <h2 >CELEBRIDADES</h2>
 
                 <div className="hol">
-                  <Link to='/favorites' ><li>Favoritos</li></Link>
+                  <Link type="button" class="btn btn-outline-info" to='/favorites' ><li>Favoritos</li></Link>
                 </div>
-                <div className="hol"><Link to='/home' ><li>Home</li> </Link>
+                <div  className="hol">
+                  <Link type="button" class="btn btn-outline-info" to='/home' ><li>Home</li> </Link>
                 </div>
                 <div className="hol">
-                  <Link to='/logout' ><li>Logout</li> </Link>
+                  <Link type="button" class="btn btn-outline-info" to='/logout' ><li>Logout</li> </Link>
                 </div>
               </div>
             </nav>

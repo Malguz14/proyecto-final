@@ -1,9 +1,35 @@
 
 #cerrar{
-    background-image:url("./visita.png");
+    background-image:url("https://pixabay.com/es/photos/diente-de-le%C3%B3n-flor-silvestre-7854275/");
     width: 100%;
     height: 100%;
-    background-size: cover;
+    
 }
 
+#imagen2{
+    width: 50%;
+    height: 20rem;
+    align-items: center;  
+}
+#imagen1{
+    width: 98%;
+    height: 40rem;
+    align-items: center;  
+}
+.poc{
+    color: rgb(255, 251, 0);
+  }
+  .hol{
+
+    text-align: center;
+    align-items: center;
+     display:inline-block; 
+     color:rgb(34, 212, 48);
+      border-radius:50px; 
+      border: 20px; font-size: 18px
+    }
        
+    #titulo1{
+        align-items: center;
+      color: rgb(0, 132, 255);
+    }
